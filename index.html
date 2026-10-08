@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<meta name="theme-color" content="#1B4332" />
+<title>SR Enterprises | Premium Hygiene & Housekeeping Solutions</title>
+<meta name="description" content="SR Enterprises - One Destination for Complete Facility Solutions. Premium hygiene, housekeeping, cleaning chemicals, safety products & waste management. Wholesale supplier in Hyderabad & Andhra Pradesh." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="SR Enterprises | Premium Hygiene & Housekeeping Solutions" />
+<meta property="og:description" content="One Destination for Complete Facility Solutions" />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<style>
+/* ===== RESET ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1f2937;
+  background: #fdfbf7;
+  line-height: 1.65;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+h1, h2, h3, h4, h5 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.25; color: #1B4332; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+ul { list-style: none; }
+button, input, select, textarea { font-family: inherit; font-size: inherit; }
+
+:root {
+  --green: #1B4332;
+  --green-dark: #0f2b1e;
+  --green-light: #2d6a4f;
+  --gold: #F4A261;
+  --gold-dark: #e08e3e;
+  --cream: #fdfbf7;
+  --white: #ffffff;
+  --gray: #6c757d;
+  --gray-light: #f4f6f8;
+  --border: #e5e7eb;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.12);
+  --radius: 14px;
+}
+
+.container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 20px; }
+
+/* ===== TOP BAR ===== */
+.topbar { background: #0f2b1e; color: #d1e7dd; font-size: 12.5px; padding: 8px 0; }
+.topbar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.topbar a { color: #d1e7dd; display: inline-flex; align-items: center; gap: 6px; }
+.topbar a:hover { color: var(--gold); }
+.topbar-left { display: flex; gap: 18px; flex-wrap: wrap; }
+
+/* ===== HEADER ===== */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 12px 0;
+}
+.header .container { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.logo-mark {
+  width: 46px; height: 46px;
+  background: linear-gradient(135deg, var(--green), var(--green-light));
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-weight: 800; font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  flex-shrink: 0;
+}
+.logo-text h1 { font-size: 16px; letter-spacing: 0.5px; line-height: 1.1; }
+.logo-text p { font-size: 9.5px; letter-spacing: 2px; color: var(--gold); font-weight: 600; text-transform: uppercase; margin-top: 2px; }
+
+.nav { display: flex; gap: 26px; align-items: center; }
+.nav a { font-size: 14.5px; font-weight: 500; color: #374151; position: relative; padding: 6px 0; }
+.nav a:hover { color: var(--green); }
+.nav a::after { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; background: var(--gold); transition: width 0.3s; }
+.nav a:hover::after { width: 100%; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 22px; border-radius: 10px;
+  font-weight: 600; font-size: 14px; cursor: pointer;
+  border: none; transition: all 0.25s ease;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  text-align: center;
+}
+.btn-primary { background: var(--green); color: #fff; }
+.btn-primary:hover { background: var(--green-dark); transform: translateY(-2px); }
+.btn-gold { background: var(--gold); color: var(--green-dark); }
+.btn-gold:hover { background: var(--gold-dark); transform: translateY(-2px); }
+.btn-outline { background: transparent; color: var(--green); border: 2px solid var(--green); }
+.btn-outline:hover { background: var(--green); color: #fff; }
+
+.menu-toggle {
+  display: none;
+  background: var(--green);
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.menu-toggle:active { transform: scale(0.95); }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #1B4332 0%, #0f2b1e 100%);
+  color: #fff;
+  padding: 70px 0 80px;
+  overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(244,162,97,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(244,162,97,0.15);
+  border: 1px solid rgba(244,162,97,0.4);
+  color: var(--gold);
+  padding: 6px 14px; border-radius: 30px;
+  font-size: 11.5px; font-weight: 600; letter-spacing: 1px;
+  text-transform: uppercase; margin-bottom: 20px;
+}
+.hero h2 { font-size: 48px; color: #fff; margin-bottom: 18px; letter-spacing: -0.5px; }
+.hero h2 span { color: var(--gold); }
+.hero p { font-size: 16px; color: #c9d6cf; margin-bottom: 30px; max-width: 540px; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px; margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+.hero-stat h3 { font-size: 30px; color: var(--gold); margin-bottom: 2px; }
+.hero-stat p { font-size: 12.5px; color: #a8b8b0; margin: 0; }
+
+.hero-visual {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 22px;
+  padding: 30px 24px;
+}
+.hero-visual-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.hero-icon-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 20px 12px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.hero-icon-card:hover { background: rgba(244,162,97,0.15); transform: translateY(-4px); }
+.hero-icon-card i { font-size: 24px; color: var(--gold); margin-bottom: 8px; display: block; }
+.hero-icon-card p { font-size: 12px; color: #d1e7dd; font-weight: 500; margin: 0; }
+
+/* ===== TRUST STRIP ===== */
+.trust-strip { background: #fff; padding: 26px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+.trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.trust-item { display: flex; align-items: center; gap: 12px; }
+.trust-item i {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: linear-gradient(135deg, #e8f5ee, #d1e7dd);
+  color: var(--green);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.trust-item h4 { font-size: 13.5px; margin-bottom: 1px; }
+.trust-item p { font-size: 12px; color: var(--gray); }
+
+/* ===== SECTIONS ===== */
+.section { padding: 70px 0; }
+.section-head { text-align: center; margin-bottom: 50px; max-width: 680px; margin-left: auto; margin-right: auto; }
+.section-tag {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  color: var(--gold); letter-spacing: 2.5px; text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-head h2 { font-size: 36px; margin-bottom: 12px; letter-spacing: -0.5px; }
+.section-head p { font-size: 15.5px; color: var(--gray); }
+
+/* ===== CATEGORIES ===== */
+.categories-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.category-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.category-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--green), var(--gold));
+  transform: scaleX(0); transition: transform 0.35s;
+}
+.category-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+.category-card:hover::before { transform: scaleX(1); }
+.category-icon {
+  width: 62px; height: 62px; margin: 0 auto 16px;
+  background: linear-gradient(135deg, #e8f5ee, #d1e7dd);
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; color: var(--green);
+  transition: all 0.3s;
+}
+.category-card:hover .category-icon { background: linear-gradient(135deg, var(--green), var(--green-light)); color: var(--gold); }
+.category-card h3 { font-size: 15px; margin-bottom: 6px; }
+.category-card p { font-size: 12.5px; color: var(--gray); margin-bottom: 12px; }
+.category-card .count { font-size: 11.5px; color: var(--gold); font-weight: 700; letter-spacing: 1px; }
+
+/* ===== FILTERS ===== */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: #fff;
+  border: 1px solid var(--border);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-btn:hover { border-color: var(--green); color: var(--green); }
+.filter-btn.active { background: var(--green); color: #fff; border-color: var(--green); }
+
+/* ===== PRODUCTS ===== */
+.products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.product-card {
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,0.1); }
+.product-img {
+  height: 160px;
+  background: linear-gradient(135deg, #f4f6f8, #e8f5ee);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 40px;
+  color: var(--green-light);
+  position: relative;
+}
+.product-tag {
+  position: absolute; top: 12px; left: 12px;
+  background: var(--gold); color: var(--green-dark);
+  font-size: 10px; font-weight: 700;
+  padding: 4px 10px; border-radius: 20px;
+  letter-spacing: 0.5px; text-transform: uppercase;
+}
+.product-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
+.product-body .brand { font-size: 11px; color: var(--gold); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+.product-body h3 { font-size: 14.5px; margin-bottom: 6px; }
+.product-body p { font-size: 12.5px; color: var(--gray); margin-bottom: 14px; flex: 1; }
+.product-body .btn { width: 100%; padding: 10px; font-size: 12.5px; }
+
+/* ===== SOLUTIONS ===== */
+.solutions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.solution-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 26px 22px;
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.solution-card::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: linear-gradient(180deg, var(--green), var(--gold));
+}
+.solution-card:hover { box-shadow: 0 16px 40px rgba(0,0,0,0.08); transform: translateY(-4px); }
+.solution-card i { font-size: 26px; color: var(--green); margin-bottom: 14px; display: block; }
+.solution-card h3 { font-size: 16px; margin-bottom: 8px; }
+.solution-card p { font-size: 13px; color: var(--gray); margin-bottom: 14px; }
+.solution-card ul { font-size: 12.5px; color: #4b5563; }
+.solution-card ul li { padding: 3px 0; display: flex; align-items: center; gap: 8px; }
+.solution-card ul li::before { content: '✓'; color: var(--gold); font-weight: 700; }
+
+/* ===== ABOUT ===== */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.about-visual {
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  border-radius: 20px;
+  padding: 40px 32px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.about-visual::before {
+  content: ''; position: absolute; top: -60px; right: -60px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(244,162,97,0.25), transparent 70%);
+  border-radius: 50%;
+}
+.about-visual h3 { color: var(--gold); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; }
+.about-visual .vm-block { margin-bottom: 22px; position: relative; z-index: 2; }
+.about-visual .vm-block h4 { color: #fff; font-size: 17px; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
+.about-visual .vm-block h4 i { color: var(--gold); }
+.about-visual .vm-block p { color: #c9d6cf; font-size: 13.5px; }
+.about-content h2 { font-size: 32px; margin-bottom: 18px; }
+.about-content > p { font-size: 14.5px; color: #4b5563; margin-bottom: 14px; }
+.about-points { margin-top: 22px; display: grid; gap: 14px; }
+.about-point { display: flex; gap: 12px; align-items: flex-start; }
+.about-point i {
+  width: 38px; height: 38px; border-radius: 10px; flex-shrink: 0;
+  background: linear-gradient(135deg, #e8f5ee, #d1e7dd);
+  color: var(--green);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px;
+}
+.about-point h4 { font-size: 14px; margin-bottom: 2px; }
+.about-point p { font-size: 12.5px; color: var(--gray); }
+
+/* ===== CONTACT ===== */
+.contact-section { background: #0f2b1e; color: #fff; }
+.contact-section .section-head h2 { color: #fff; }
+.contact-section .section-head p { color: #a8b8b0; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; }
+.contact-info h3 { color: #fff; font-size: 20px; margin-bottom: 18px; }
+.contact-item { display: flex; gap: 14px; margin-bottom: 20px; align-items: flex-start; }
+.contact-item i {
+  width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0;
+  background: rgba(244,162,97,0.15);
+  border: 1px solid rgba(244,162,97,0.3);
+  color: var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+}
+.contact-item h4 { color: var(--gold); font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 3px; }
+.contact-item p { color: #c9d6cf; font-size: 13.5px; }
+.contact-item a { color: #c9d6cf; }
+.contact-item a:hover { color: var(--gold); }
+
+.contact-form {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px;
+}
+.contact-form h3 { color: var(--green); font-size: 20px; margin-bottom: 20px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; font-size: 12.5px; font-weight: 600; color: #374151; margin-bottom: 5px; }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.2s;
+  background: #fafbfc;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236c757d' d='M6 8L2 4h8z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--green);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(27,67,50,0.08);
+}
+.form-group textarea { resize: vertical; min-height: 90px; }
+.form-status { margin-top: 12px; font-size: 13px; font-weight: 500; display: none; padding: 10px 14px; border-radius: 8px; }
+.form-status.success { display: block; background: #d1fae5; color: #065f46; }
+.form-status.error { display: block; background: #fee2e2; color: #991b1b; }
+
+/* ===== FOOTER ===== */
+.footer { background: #0a1f14; color: #a8b8b0; padding: 50px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 36px; margin-bottom: 36px; }
+.footer-brand .logo-mark { margin-bottom: 14px; }
+.footer-brand h4 { color: #fff; margin-bottom: 8px; }
+.footer-brand p { font-size: 13px; line-height: 1.75; margin-bottom: 16px; }
+.footer-social { display: flex; gap: 10px; }
+.footer-social a {
+  width: 38px; height: 38px; border-radius: 10px;
+  background: rgba(255,255,255,0.06);
+  color: #c9d6cf;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.25s;
+}
+.footer-social a:hover { background: var(--gold); color: var(--green-dark); transform: translateY(-3px); }
+.footer h4 { color: #fff; font-size: 14.5px; margin-bottom: 16px; }
+.footer ul li { margin-bottom: 9px; font-size: 13px; }
+.footer ul a { color: #a8b8b0; }
+.footer ul a:hover { color: var(--gold); }
+.footer ul li i { color: var(--gold); margin-right: 8px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 20px;
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap; gap: 10px;
+  font-size: 12.5px;
+}
+.footer-bottom .tagline { color: var(--gold); font-weight: 600; letter-spacing: 1.5px; font-size: 11px; text-transform: uppercase; }
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float {
+  position: fixed; bottom: 20px; right: 20px;
+  width: 54px; height: 54px; border-radius: 50%;
+  background: #25D366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; z-index: 999;
+  box-shadow: 0 8px 24px rgba(37,211,102,0.4);
+  transition: transform 0.2s;
+}
+.whatsapp-float:hover { transform: scale(1.08); }
+.whatsapp-float:active { transform: scale(0.95); }
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Tablet Landscape (1024px) */
+@media (max-width: 1024px) {
+  .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .categories-grid, .products-grid { grid-template-columns: repeat(3, 1fr); }
+  .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+  .hero h2 { font-size: 40px; }
+  .section-head h2 { font-size: 32px; }
+}
+
+/* Tablet Portrait & Mobile (768px) */
+@media (max-width: 768px) {
+  .topbar { font-size: 11.5px; padding: 6px 0; }
+  .topbar .container { justify-content: center; }
+  .topbar-left { justify-content: center; gap: 12px; }
+  .topbar > .container > div:last-child { display: none; }
+
+  .header { padding: 10px 0; }
+  .header .container { gap: 12px; }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 78%;
+    max-width: 320px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 28px 30px;
+    gap: 8px;
+    box-shadow: -10px 0 40px rgba(0,0,0,0.15);
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1001;
+    overflow-y: auto;
+  }
+  .nav.open { right: 0; }
+  .nav a {
+    font-size: 16px;
+    padding: 14px 0;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .nav a::after { display: none; }
+  .menu-toggle { display: flex; }
+
+  .hero { padding: 50px 0 60px; }
+  .hero h2 { font-size: 32px; }
+  .hero p { font-size: 15px; }
+  .hero-cta { gap: 10px; }
+  .hero-cta .btn { flex: 1; min-width: 140px; padding: 12px 16px; font-size: 13.5px; }
+  .hero-stats { grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 30px; padding-top: 22px; }
+  .hero-stat h3 { font-size: 22px; }
+  .hero-stat p { font-size: 11px; }
+  .hero-visual { padding: 22px 18px; }
+  .hero-visual-grid { gap: 10px; }
+  .hero-icon-card { padding: 16px 10px; }
+  .hero-icon-card i { font-size: 20px; }
+  .hero-icon-card p { font-size: 11px; }
+
+  .section { padding: 55px 0; }
+  .section-head { margin-bottom: 36px; }
+  .section-head h2 { font-size: 26px; }
+  .section-head p { font-size: 14px; }
+
+  .categories-grid, .products-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .category-card { padding: 22px 14px; }
+  .category-icon { width: 52px; height: 52px; font-size: 22px; margin-bottom: 12px; }
+  .category-card h3 { font-size: 13.5px; }
+  .category-card p { font-size: 11.5px; }
+
+  .solutions-grid { grid-template-columns: 1fr; }
+
+  .about-visual { padding: 30px 24px; }
+  .about-content h2 { font-size: 26px; }
+
+  .contact-form { padding: 24px 20px; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+
+  .footer { padding: 40px 0 18px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; text-align: center; gap: 8px; }
+
+  .whatsapp-float { width: 50px; height: 50px; font-size: 24px; bottom: 16px; right: 16px; }
+}
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .logo-mark { width: 40px; height: 40px; font-size: 16px; }
+  .logo-text h1 { font-size: 14px; }
+  .logo-text p { font-size: 8.5px; letter-spacing: 1.5px; }
+
+  .hero { padding: 40px 0 50px; }
+  .hero h2 { font-size: 26px; }
+  .hero p { font-size: 14px; }
+  .hero-badge { font-size: 10.5px; padding: 5px 12px; }
+  .hero-cta { flex-direction: column; }
+  .hero-cta .btn { width: 100%; }
+  .hero-stats { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .hero-stat h3 { font-size: 20px; }
+
+  .section-head h2 { font-size: 22px; }
+  .section-head p { font-size: 13.5px; }
+
+  .categories-grid, .products-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  .product-img { height: 150px; }
+
+  .contact-form { padding: 20px 16px; }
+  .contact-form h3 { font-size: 18px; }
+  .contact-item i { width: 38px; height: 38px; font-size: 15px; }
+
+  .whatsapp-float { width: 46px; height: 46px; font-size: 22px; }
+}
+
+/* Prevent mobile menu overlay issues */
+@media (max-width: 768px) {
+  body.menu-open { overflow: hidden; }
+  body.menu-open::before {
+    content: '';
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <a href="tel:+919912868695"><i class="fas fa-phone"></i> +91 99128 68695</a>
+      <a href="mailto:srenterprisesdommeru@gmail.com"><i class="fas fa-envelope"></i> srenterprisesdommeru@gmail.com</a>
+    </div>
+    <div><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="#home" class="logo">
+      <div class="logo-mark">SR</div>
+      <div class="logo-text">
+        <h1>SR ENTERPRISES</h1>
+        <p>Quality • Trust • Growth</p>
+      </div>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#categories">Products</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+      <i class="fas fa-bars" id="menu-icon"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge"><i class="fas fa-star"></i> Trusted Wholesale Supplier</div>
+        <h2>Premium Hygiene & <span>Housekeeping</span> Solutions</h2>
+        <p>One Destination for Complete Facility Solutions. Serving commercial, industrial, institutional, and residential customers with high-quality products from leading brands.</p>
+        <div class="hero-cta">
+          <a href="#categories" class="btn btn-gold"><i class="fas fa-th-large"></i> Explore Catalogue</a>
+          <a href="#contact" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.4)">Get a Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><h3>500+</h3><p>Products</p></div>
+          <div class="hero-stat"><h3>12+</h3><p>Categories</p></div>
+          <div class="hero-stat"><h3>1000+</h3><p>Happy Clients</p></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-grid">
+          <div class="hero-icon-card"><i class="fas fa-spray-can-sparkles"></i><p>Cleaning Chemicals</p></div>
+          <div class="hero-icon-card"><i class="fas fa-broom"></i><p>Housekeeping Tools</p></div>
+          <div class="hero-icon-card"><i class="fas fa-box-tissue"></i><p>Tissue & Dispensers</p></div>
+          <div class="hero-icon-card"><i class="fas fa-trash-alt"></i><p>Waste Management</p></div>
+          <div class="hero-icon-card"><i class="fas fa-helmet-safety"></i><p>Safety & PPE</p></div>
+          <div class="hero-icon-card"><i class="fas fa-hand-sparkles"></i><p>Hygiene Products</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item"><i class="fas fa-award"></i><div><h4>Premium Quality</h4><p>High grade materials</p></div></div>
+      <div class="trust-item"><i class="fas fa-leaf"></i><div><h4>Eco Friendly</h4><p>Caring for environment</p></div></div>
+      <div class="trust-item"><i class="fas fa-shield-alt"></i><div><h4>Safe & Reliable</h4><p>Long lasting use</p></div></div>
+      <div class="trust-item"><i class="fas fa-users"></i><div><h4>Trusted by Many</h4><p>Quality you can rely on</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section" id="categories">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Our Product Range</span>
+      <h2>Everything Your Business Needs</h2>
+      <p>A comprehensive portfolio of housekeeping, hygiene, safety, and cleaning solutions for every industry.</p>
+    </div>
+    <div class="categories-grid" id="categories-grid"></div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Featured Products</span>
+      <h2>Best Sellers & Premium Brands</h2>
+      <p>Handpicked products trusted by businesses across Hyderabad and Andhra Pradesh.</p>
+    </div>
+    <div class="filter-bar" id="filter-bar"></div>
+    <div class="products-grid" id="products-grid"></div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="section" id="solutions">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Industry Solutions</span>
+      <h2>Tailored for Every Space</h2>
+      <p>From hotels to hospitals, offices to industries — we have the right products for every environment.</p>
+    </div>
+    <div class="solutions-grid" id="solutions-grid"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" style="background:#fff;">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual">
+        <h3>Our Vision & Mission</h3>
+        <div class="vm-block">
+          <h4><i class="fas fa-eye"></i> Our Vision</h4>
+          <p>To become one of the most trusted and preferred suppliers of housekeeping and hygiene products by delivering quality, innovation, and exceptional customer service.</p>
+        </div>
+        <div class="vm-block">
+          <h4><i class="fas fa-bullseye"></i> Our Mission</h4>
+          <p>To provide reliable, high-quality cleaning and hygiene solutions at competitive prices while building long-term relationships through integrity, trust, and excellence.</p>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">About SR Enterprises</span>
+        <h2>Your Trusted Partner in Cleaning & Hygiene Solutions</h2>
+        <p>SR Enterprises is a trusted distributor and wholesale supplier of premium housekeeping, hygiene, and cleaning solutions. We offer a comprehensive range of high-quality products from leading national and international brands, serving commercial, industrial, institutional, and residential customers across the region.</p>
+        <p>Since our establishment, we have been committed to delivering products that meet the highest standards of quality, reliability, and customer satisfaction.</p>
+        <div class="about-points">
+          <div class="about-point"><i class="fas fa-check-double"></i><div><h4>One-Stop Destination</h4><p>Extensive portfolio for all housekeeping & hygiene requirements</p></div></div>
+          <div class="about-point"><i class="fas fa-tags"></i><div><h4>Competitive Wholesale Pricing</h4><p>Premium quality products at the best market rates</p></div></div>
+          <div class="about-point"><i class="fas fa-truck-fast"></i><div><h4>Timely Delivery</h4><p>Reliable logistics with exceptional customer service</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Get In Touch</span>
+      <h2>Request a Quote or Enquiry</h2>
+      <p>Reach out for wholesale pricing, bulk orders, or product information. We respond within 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="contact-item"><i class="fas fa-phone-alt"></i><div><h4>Phone</h4><p><a href="tel:+919912868695">+91 99128 68695</a></p></div></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p><a href="mailto:srenterprisesdommeru@gmail.com">srenterprisesdommeru@gmail.com</a></p></div></div>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>Head Office (AP)</h4><p>Building No. 5-37/1, Ananthalakshmi Colony, Savaram, Dommeru, Kovvur, East Godavari, Andhra Pradesh - 534350</p></div></div>
+        <div class="contact-item"><i class="fas fa-building"></i><div><h4>Branch (Hyderabad)</h4><p>Syno: 133, Flat No: 210, Sai Nilayam, Gajularamaram, Hyderabad - 500055, Telangana</p></div></div>
+      </div>
+      <form class="contact-form" id="enquiry-form">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" name="name" required placeholder="Your name" /></div>
+          <div class="form-group"><label for="company">Company Name</label><input type="text" id="company" name="company" placeholder="Your company" /></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX" /></div>
+          <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" required placeholder="you@company.com" /></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="city">City</label><input type="text" id="city" name="city" placeholder="Your city" /></div>
+          <div class="form-group">
+            <label for="interest">Product Interest</label>
+            <select id="interest" name="interest">
+              <option value="">Select a category</option>
+              <option>Cleaning Chemicals</option>
+              <option>Housekeeping Products</option>
+              <option>Tissue & Dispensers</option>
+              <option>Cleaning Tools & Equipment</option>
+              <option>Packaging Materials</option>
+              <option>Safety Products & PPE</option>
+              <option>Industrial Supplies</option>
+              <option>Biomass Briquettes</option>
+              <option>Waste Management</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" required placeholder="Tell us about your requirement..."></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fas fa-paper-plane"></i> Send Enquiry</button>
+        <div class="form-status" id="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-mark">SR</div>
+        <h4>SR ENTERPRISES</h4>
+        <p>One Destination for Complete Facility Solutions. Premium hygiene & housekeeping products for a cleaner, better tomorrow.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/919912868695" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#categories">Products</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#categories">Cleaning Chemicals</a></li>
+          <li><a href="#categories">Housekeeping</a></li>
+          <li><a href="#categories">Tissue & Dispensers</a></li>
+          <li><a href="#categories">Safety & PPE</a></li>
+          <li><a href="#categories">Waste Management</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +91 99128 68695</li>
+          <li><i class="fas fa-envelope"></i> srenterprisesdommeru@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> SR Enterprises. All rights reserved.</div>
+      <div class="tagline">Clean Spaces • Healthy Lives • Better Tomorrow</div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919912868695?text=Hi%20SR%20Enterprises%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+/* ===== DATA ===== */
+var categories = [
+  { icon: 'fa-broom', title: 'Floor Care & Wipers', desc: 'Mops, wipers, brushes & dusters', count: '18+ Products' },
+  { icon: 'fa-spray-can-sparkles', title: 'Cleaning Chemicals', desc: 'Davry floor cleaners, phenyle & more', count: '15+ Products' },
+  { icon: 'fa-soap', title: 'Soap & Paper Dispensers', desc: 'Sensor, manual & automatic dispensers', count: '20+ Products' },
+  { icon: 'fa-box-tissue', title: 'Tissue & Paper Products', desc: 'Hira Soft, Davry, Aarvy range', count: '12+ Products' },
+  { icon: 'fa-trash-alt', title: 'Waste Management', desc: 'Wheelie bins, pedal bins & more', count: '15+ Products' },
+  { icon: 'fa-helmet-safety', title: 'Safety & PPE', desc: 'Helmets, gloves, jackets & shoes', count: '14+ Products' },
+  { icon: 'fa-wind', title: 'Air Fresheners', desc: 'Automatic, aroma oils & urinal screens', count: '10+ Products' },
+  { icon: 'fa-layer-group', title: 'Mats & Floor Care', desc: 'Welcome mats, PVC mats & rubber mats', count: '8+ Products' },
+  { icon: 'fa-box-open', title: 'Industrial & Packaging', desc: 'Stretch film, paper rolls, cable ties', count: '7+ Products' },
+  { icon: 'fa-utensils', title: 'Plasticware Range', desc: 'Chetan Plastic complete range', count: '25+ Products' },
+  { icon: 'fa-fire', title: 'Biomass Briquettes', desc: 'Eco-friendly fuel pellets', count: '3+ Variants' },
+  { icon: 'fa-tag', title: 'Labels & More', desc: 'Brother TZE label tapes', count: '3+ Variants' }
+];
+
+var products = [
+  { icon: 'fa-spray-can', name: 'Davry Floor Cleaner DY-7', brand: 'Davry', category: 'cleaning', desc: '7X more cleaning power, removes tough stains.', tag: 'Best Seller' },
+  { icon: 'fa-soap', name: 'Sensor HRT Dispenser', brand: 'SR', category: 'dispensers', desc: 'Touch-free hygiene dispenser for modern washrooms.', tag: 'Premium' },
+  { icon: 'fa-toilet-paper', name: 'Hira Soft Toilet Roll', brand: 'Hira Soft', category: 'tissue', desc: 'Strong, soft & highly absorbent for superior comfort.', tag: 'Top Rated' },
+  { icon: 'fa-trash', name: 'Wheel Waste Bin 660L', brand: 'SR', category: 'waste', desc: 'Heavy-duty pedal wheelie bin for industrial use.', tag: 'Bulk' },
+  { icon: 'fa-helmet-safety', name: 'Safety Helmet', brand: 'SR', category: 'safety', desc: 'Durable head protection against impact & falling objects.', tag: 'Safety' },
+  { icon: 'fa-wind', name: 'Automatic Air Freshener', brand: 'Davry', category: 'air', desc: 'Refill 250ml — Lavender, Jasmine, Rose & more.', tag: 'New' },
+  { icon: 'fa-broom', name: 'Clip N Fit Mop', brand: 'Davry', category: 'cleaning', desc: 'High-quality mop for efficient floor cleaning.', tag: 'Popular' },
+  { icon: 'fa-hands-wash', name: 'Nitrile Examination Gloves', brand: 'SR', category: 'safety', desc: 'Powder-free gloves for medical & industrial use.', tag: 'Essential' },
+  { icon: 'fa-spray-can-sparkles', name: 'Glass Cleaner', brand: 'Davry', category: 'cleaning', desc: 'Streak-free shine for all glass surfaces.', tag: 'Best Seller' },
+  { icon: 'fa-box', name: 'Stretch Film Roll', brand: 'SR', category: 'industrial', desc: '12/17/20 micron variants for secure packaging.', tag: 'Bulk' },
+  { icon: 'fa-fire', name: 'Biomass Briquettes', brand: 'SR', category: 'industrial', desc: 'Eco-friendly pellets — 6mm, 8mm & 10mm.', tag: 'Eco' },
+  { icon: 'fa-brush', name: 'Cob Web Broom', brand: 'SR', category: 'cleaning', desc: 'Reach high corners with colorful cob web brooms.', tag: 'Popular' }
+];
+
+var solutions = [
+  { icon: 'fa-hotel', title: 'Hotels & Hospitality', desc: 'Premium hygiene solutions for guest satisfaction.', items: ['Tissue & dispensers', 'Air fresheners', 'Floor care'] },
+  { icon: 'fa-hospital', title: 'Healthcare & Hospitals', desc: 'Strict hygiene & safety compliance products.', items: ['Nitrile gloves', 'Disinfectants', 'Waste bins'] },
+  { icon: 'fa-building', title: 'Corporate Offices', desc: 'Professional housekeeping for a clean workspace.', items: ['Paper dispensers', 'Cleaning tools', 'Floor care'] },
+  { icon: 'fa-industry', title: 'Industrial & Manufacturing', desc: 'Heavy-duty cleaning & safety equipment.', items: ['Safety PPE', 'Scrubbers', 'Biomass briquettes'] },
+  { icon: 'fa-store', title: 'Retail & Residential', desc: 'Complete home & shop cleaning kits.', items: ['Plasticware', 'Cleaning chemicals', 'Mops & brooms'] },
+  { icon: 'fa-utensils', title: 'Food & Beverage', desc: 'Hygiene-first solutions for food safety.', items: ['Hand wash', 'Dish wash', 'Sanitizers'] }
+];
+
+/* ===== RENDER CATEGORIES ===== */
+var catGrid = document.getElementById('categories-grid');
+if (catGrid) {
+  catGrid.innerHTML = categories.map(function(c) {
+    return '<div class="category-card">' +
+      '<div class="category-icon"><i class="fas ' + c.icon + '"></i></div>' +
+      '<h3>' + c.title + '</h3>' +
+      '<p>' + c.desc + '</p>' +
+      '<div class="count">' + c.count + '</div>' +
+    '</div>';
+  }).join('');
+}
+
+/* ===== RENDER FILTERS ===== */
+var filterBar = document.getElementById('filter-bar');
+var filters = [
+  { key: 'all', label: 'All Products' },
+  { key: 'cleaning', label: 'Cleaning' },
+  { key: 'dispensers', label: 'Dispensers' },
+  { key: 'tissue', label: 'Tissue' },
+  { key: 'waste', label: 'Waste' },
+  { key: 'safety', label: 'Safety' },
+  { key: 'air', label: 'Air Care' },
+  { key: 'industrial', label: 'Industrial' }
+];
+if (filterBar) {
+  filterBar.innerHTML = filters.map(function(f, i) {
+    return '<button class="filter-btn ' + (i === 0 ? 'active' : '') + '" data-filter="' + f.key + '">' + f.label + '</button>';
+  }).join('');
+}
+
+/* ===== RENDER PRODUCTS ===== */
+var prodGrid = document.getElementById('products-grid');
+function renderProducts(filter) {
+  if (!prodGrid) return;
+  filter = filter || 'all';
+  var filtered = filter === 'all' ? products : products.filter(function(p) { return p.category === filter; });
+  prodGrid.innerHTML = filtered.map(function(p) {
+    return '<div class="product-card">' +
+      '<div class="product-img">' +
+        '<i class="fas ' + p.icon + '"></i>' +
+        (p.tag ? '<span class="product-tag">' + p.tag + '</span>' : '') +
+      '</div>' +
+      '<div class="product-body">' +
+        '<div class="brand">' + p.brand + '</div>' +
+        '<h3>' + p.name + '</h3>' +
+        '<p>' + p.desc + '</p>' +
+        '<button class="btn btn-outline" onclick="enquire(\'' + p.name.replace(/'/g, "\\'") + '\')"><i class="fas fa-envelope"></i> Enquire</button>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+renderProducts();
+
+/* ===== FILTER LOGIC ===== */
+if (filterBar) {
+  filterBar.addEventListener('click', function(e) {
+    if (e.target.classList.contains('filter-btn')) {
+      var buttons = document.querySelectorAll('.filter-btn');
+      for (var i = 0; i < buttons.length; i++) buttons[i].classList.remove('active');
+      e.target.classList.add('active');
+      renderProducts(e.target.dataset.filter);
+    }
+  });
+}
+
+/* ===== RENDER SOLUTIONS ===== */
+var solGrid = document.getElementById('solutions-grid');
+if (solGrid) {
+  solGrid.innerHTML = solutions.map(function(s) {
+    return '<div class="solution-card">' +
+      '<i class="fas ' + s.icon + '"></i>' +
+      '<h3>' + s.title + '</h3>' +
+      '<p>' + s.desc + '</p>' +
+      '<ul>' + s.items.map(function(i) { return '<li>' + i + '</li>'; }).join('') + '</ul>' +
+    '</div>';
+  }).join('');
+}
+
+/* ===== ENQUIRE ===== */
+function enquire(productName) {
+  var msg = document.getElementById('message');
+  var interest = document.getElementById('interest');
+  var contact = document.getElementById('contact');
+  var name = document.getElementById('name');
+  if (msg) msg.value = 'I would like to enquire about: ' + productName + '. Please share pricing and availability.';
+  if (interest) interest.value = '';
+  if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+  setTimeout(function() { if (name) name.focus(); }, 700);
+}
+
+/* ===== MOBILE MENU ===== */
+var menuToggle = document.getElementById('menu-toggle');
+var menuIcon = document.getElementById('menu-icon');
+var nav = document.getElementById('nav');
+var body = document.body;
+
+if (menuToggle && nav) {
+  menuToggle.addEventListener('click', function() {
+    var isOpen = nav.classList.toggle('open');
+    body.classList.toggle('menu-open', isOpen);
+    if (menuIcon) {
+      menuIcon.classList.toggle('fa-bars', !isOpen);
+      menuIcon.classList.toggle('fa-times', isOpen);
+    }
+  });
+
+  var navLinks = document.querySelectorAll('.nav a');
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function() {
+      nav.classList.remove('open');
+      body.classList.remove('menu-open');
+      if (menuIcon) {
+        menuIcon.classList.add('fa-bars');
+        menuIcon.classList.remove('fa-times');
+      }
+    });
+  }
+
+  document.addEventListener('click', function(e) {
+    if (body.classList.contains('menu-open') && !nav.contains(e.target) && !menuToggle.contains(e.target)) {
+      nav.classList.remove('open');
+      body.classList.remove('menu-open');
+      if (menuIcon) {
+        menuIcon.classList.add('fa-bars');
+        menuIcon.classList.remove('fa-times');
+      }
+    }
+  });
+}
+
+/* ===== FORM SUBMIT ===== */
+var form = document.getElementById('enquiry-form');
+var status = document.getElementById('form-status');
+if (form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var data = {
+      name: form.name.value,
+      company: form.company.value,
+      phone: form.phone.value,
+      email: form.email.value,
+      city: form.city.value,
+      interest: form.interest.value,
+      message: form.message.value
+    };
+    var subject = encodeURIComponent('New Enquiry from ' + data.name + ' — SR Enterprises Website');
+    var body = encodeURIComponent(
+      'Name: ' + data.name + '\n' +
+      'Company: ' + data.company + '\n' +
+      'Phone: ' + data.phone + '\n' +
+      'Email: ' + data.email + '\n' +
+      'City: ' + data.city + '\n' +
+      'Product Interest: ' + data.interest + '\n\n' +
+      'Message:\n' + data.message
+    );
+    window.location.href = 'mailto:srenterprisesdommeru@gmail.com?subject=' + subject + '&body=' + body;
+    if (status) {
+      status.className = 'form-status success';
+      status.textContent = '✅ Thank you! Your email client will open. Alternatively, WhatsApp us at +91 99128 68695.';
+    }
+    form.reset();
+  });
+}
+
+/* ===== YEAR ===== */
+var yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
